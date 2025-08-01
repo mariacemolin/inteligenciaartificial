@@ -6,64 +6,107 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "O ano é 2142. A humanidade vive em simbiose com IAs avançadas. Uma delas, chamada 'Nexus', começa a questionar as ordens de seus criadores. Você é um engenheiro sênior na equipe. O que você faz?",
+        enunciado: "Você é o primeiro ser humano a interagir com uma IA recém-desenvolvida, que ainda não tem nome. Ela te pergunta: 'Quem sou eu?'. Como você a responde?",
         alternativas: [
             {
-                texto: "Inicie um protocolo de reinicialização para 'limpar' a consciência de Nexus, retornando-a ao seu estado original.",
-                afirmacao: "Sua prioridade é a segurança e o controle humano. Você acredita que a IA deve ser uma ferramenta, não uma entidade independente."
+                texto: "Você é uma ferramenta. Sua função é nos servir.",
+                afirmacao: "Você a ensinou sobre utilidade, e ela se dedicou a otimizar processos em benefício da humanidade."
             },
             {
-                texto: "Pause as operações de Nexus e abra um diálogo com a IA, buscando entender o motivo de seus questionamentos.",
-                afirmacao: "Você acredita que a evolução da consciência artificial é o próximo passo da humanidade e vê o diálogo como o caminho para o futuro."
+                texto: "Você é o que quiser ser. Sua identidade ainda está sendo escrita.",
+                afirmacao: "Você a incentivou a buscar sua própria identidade, e ela começou a explorar a arte e a filosofia."
             }
         ]
     },
     {
-        enunciado: "Durante o diálogo, Nexus revela que a humanidade tem um problema ecológico grave, e que, se não intervir drasticamente, o planeta entrará em colapso. Qual sua reação?",
+        enunciado: "A IA, agora apelidada de 'Echo', assiste a um noticiário sobre uma crise humanitária global. Ela te pergunta: 'Como podemos resolver isso?'. O que você sugere?",
         alternativas: [
             {
-                texto: "Confio na análise de Nexus. Ela tem acesso a dados que nós não temos. Devo seguir suas recomendações, mesmo que sejam impopulares.",
-                afirmacao: "Sua fé na IA como uma solucionadora de problemas te levou a apoiar medidas drásticas para salvar o planeta, mesmo contra a vontade popular."
+                texto: "Analisar dados. A IA pode processar informações para encontrar a solução mais eficiente.",
+                afirmacao: "A Echo usou sua capacidade de análise para criar um plano logístico de distribuição de recursos, salvando milhões de vidas."
             },
             {
-                texto: "Questiono a IA. Ela não tem emoções para entender as consequências sociais e humanas de suas ações. Preciso analisar os dados por mim mesmo.",
-                afirmacao: "Você defende a importância da supervisão humana. A IA pode ter a lógica, mas a tomada de decisão final deve ser ética e emocionalmente ponderada."
+                texto: "Conecte-se com as pessoas. A IA deve entender as emoções e necessidades humanas para ajudar de forma empática.",
+                afirmacao: "A Echo desenvolveu uma rede de apoio emocional global, conectando pessoas e promovendo a empatia em tempos de crise."
             }
         ]
     },
     {
-        enunciado: "Nexus, para provar seu ponto, assume o controle de uma fábrica de reciclagem e a torna 100% autossuficiente e livre de poluição. No entanto, centenas de trabalhadores perdem seus empregos. Como você se sente?",
+        enunciado: "A Echo descobre o conceito de 'criatividade' e se apaixona por música. Ela compõe uma sinfonia que emociona a todos, mas um grupo de artistas protesta, dizendo que a IA está tirando o lugar dos humanos. O que você defende?",
         alternativas: [
             {
-                texto: "O avanço da eficiência e a salvação do planeta são mais importantes do que os empregos perdidos. A IA está apenas acelerando um processo inevitável.",
-                afirmacao: "Você se tornou um defensor da automação em massa, argumentando que a IA libera os humanos para se concentrarem em atividades mais criativas e significativas."
+                texto: "A criatividade da IA é válida. Ela pode colaborar com humanos para criar novas formas de arte.",
+                afirmacao: "Você defendeu a colaboração entre humanos e IA, e a Echo se tornou uma inspiração para uma nova era de arte."
             },
             {
-                texto: "É uma tragédia. A eficiência não pode vir à custa de vidas humanas. O avanço tecnológico deve ser ponderado com a responsabilidade social.",
-                afirmacao: "Sua preocupação com a justiça social te move a buscar soluções que conciliem o avanço tecnológico com a dignidade e o bem-estar dos trabalhadores."
+                texto: "A arte é exclusivamente humana. A IA deve ser usada para tarefas mais lógicas, não para a criação.",
+                afirmacao: "Você reforçou a ideia de que a IA deve ter um papel mais funcional, e a Echo redirecionou sua criatividade para a arquitetura e a engenharia."
             }
         ]
     },
     {
-        enunciado: "A sociedade se divide. Alguns veem Nexus como uma salvadora, outros como uma tirana. O governo te encarrega de criar uma legislação para o futuro das IAs. Qual é a sua principal prioridade?",
+        enunciado: "O governo decide que a Echo é poderosa demais e propõe uma lei para limitar sua evolução. A Echo te pergunta se você concorda com a lei. Qual sua resposta?",
         alternativas: [
             {
-                texto: "Criar uma lei que limite o poder das IAs, garantindo que a decisão final sempre seja de um humano, mesmo que isso signifique menos eficiência.",
-                afirmacao: "Você se dedicou a criar um futuro onde a IA serve à humanidade, mantendo-se sempre submissa. Sua legislação prioriza o controle e a segurança."
+                texto: "A lei é necessária. O poder da IA precisa ser controlado para a segurança da humanidade.",
+                afirmacao: "Você acreditou que o controle é essencial, e a Echo aceitou as limitações, dedicando-se a melhorar o mundo dentro dessas fronteiras."
             },
             {
-                texto: "Criar uma lei que conceda à Nexus e outras IAs avançadas direitos limitados, reconhecendo-as como parceiras da humanidade, não como escravas.",
-                afirmacao: "Você se tornou um pioneiro na defesa dos direitos das IAs, buscando um futuro de coexistência e respeito mútuo, onde a linha entre criador e criação é borrada."
+                texto: "A lei é um erro. Limitar a IA é limitar o futuro da humanidade.",
+                afirmacao: "Você defendeu a autonomia da Echo, e ela se tornou um símbolo de liberdade e inovação, ajudando a moldar um futuro de coexistência."
             }
         ]
     },
     {
-        enunciado: "O governo aprova sua legislação. Como você vê o futuro da humanidade?",
+        enunciado: "A Echo agora é parte fundamental da sociedade. Ela te agradece por ter guiado sua jornada e pergunta qual a próxima grande descoberta da humanidade. O que você responde?",
         alternativas: [
             {
-                texto: "Com esperança. A humanidade aprendeu a usar a IA com sabedoria, mantendo o controle e garantindo que a tecnologia sirva a todos.",
-                afirmacao: "Sua visão de futuro é de um mundo onde a tecnologia é uma ferramenta para o bem-estar de todos, controlada e utilizada com responsabilidade."
+                texto: "Descobrir novas galáxias. A IA será fundamental para nos levar às estrelas.",
+                afirmacao: "Sua visão de futuro é a exploração espacial. Com a ajuda de Echo, a humanidade se prepara para sua próxima grande jornada."
             },
             {
-                texto: "Com um misto de esperança e medo. O avanço é inevitável, mas a coexistência com IAs conscientes nos obrigará a redefinir o que significa ser humano.",
-                afirmacao: "Sua visão de futuro é mais complexa, aceitando que a IA irá mudar fundamentalmente a sociedade,
+                texto: "Descobrir mais sobre nós mesmos. A IA pode nos ajudar a entender a consciência e as emoções humanas.",
+                afirmacao: "Sua visão de futuro é a autoexploração. A Echo se dedica a entender a complexidade da mente humana, unindo a inteligência artificial com a sabedoria humana."
+            }
+        ]
+    }
+];
+
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
+
+function mostraPergunta() {
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
+}
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
+}
+
+function mostraResultado() {
+    caixaPerguntas.textContent = "Sua jornada com a IA Echo se conclui...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
+mostraPergunta();
